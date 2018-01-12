@@ -10,7 +10,7 @@ cls
 cd ..
 echo Wprowadz link strony do pobrania:
 set /P site=
-wget -r -c --progress=bar %site% -P Sites\%folder%
+wget -r -c --no-host-directories %site% -P Sites\%folder%
 cls
 echo Strona zostala pobrana. Co chcesz zrobic dalej?
 echo 1 - Pobierzmy kolejna!
